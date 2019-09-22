@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="flexboxgrid.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Compiled and minified CSS -->
+
+    <!-- Compiled and minified JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jque    background-color: rgba(0, 0, 0, 0.4);
+                                           ry.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="comp.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        .head
+{
+background-color:rgb(5, 6, 7,0.9);
+color:white;
+height:130px;
+border-bottom:rgba(0,0,0,0.8);
+
+}
+.head a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:12px;
+}
+h
+.head li
+{
+    
+    display: inline;
+
+}
+.head #solid h1
+{
+    margin-left:160px;
+    margin-top:20px;
+   
+}
+.head .special
+{
+    color:red;
+    font-weight:bold;
+}
+a:hover{
+    color:skyblue;
+    font-weight:bold;
+
+}
+.head li
+{
+    
+    display: inline;
+ padding-left:10px 20px 0px 20px ;
+ margin:3px;
+}
+
+
+
+
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #108d6f;
+            border-color: #108d6f;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007b5e;
+            border-color: #007b5e;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section .section-title {
+            text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        #team .card {
+            border: none;
+            background: #ffffff;
+        }
+
+        .image-flip:hover .backside,
+        .image-flip.hover .backside {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            border-radius: .25rem;
+        }
+
+        .image-flip:hover .frontside,
+        .image-flip.hover .frontside {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .mainflip {
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -moz-transition: 1s;
+            -moz-transform: perspective(1000px);
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .frontside {
+            position: relative;
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+
+        .backside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:black;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        }
+
+        .frontside,
+        .backside {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1s;
+            -o-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        .frontside .card,
+        .backside .card {
+            min-height: 312px;
+        }
+
+        .backside .card a {
+            font-size: 18px;
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-title,
+        .backside .card .card-title {
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-body img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        #content1 {
+            margin-bottom: 70px;
+        }
+
+        .col-md-3 {
+            margin-left: 5%;
+        }
+
+        button {
+            margin: 30px 50%;
+            line-height: 40px;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            outline: none !important;
+            width: 100%;
+            position: sticky;
+        }
+
+        button:active {
+            outline: none;
+        }
+
+        h2 {
+            display: block;
+            font-size: 2em;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        button.ribbon {
+            outline: none;
+            outline-color: transparent;
+        }
+
+        button.ribbon:before,
+        button.ribbon:after {
+            top: 15px;
+            z-index: -10;
+        }
+
+        button.ribbon:before {
+            border-color: #53dab6 #53dab6 #53dab6 transparent;
+            left: -25px;
+            top: -10px;
+            border-width: 15px;
+        }
+
+        button.ribbon:after {
+            border-color: #53dab6 transparent #53dab6 #53dab6;
+            right: -25px;
+            top: 10px;
+            border-width: 15px;
+        }
+
+        button:before,
+        button:after {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-style: solid;
+            border-width: 0;
+            outline: none;
+        }
+
+        #ds {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+         
+        }
+
+        button.btn-default:before {
+            border-color: #999999 #999999 #999999 transparent;
+        }
+
+        button.btn-default:after {
+            border-color: #999999 transparent #999999 #999999;
+        }
+
+        button.btn-primary:before {
+            border-color: #2e6da4 #2e6da4 #2e6da4 transparent;
+        }
+
+        button.btn-primary:after {
+            border-color: #2e6da4 transparent #2e6da4 #2e6da4;
+        }
+
+        button.btn-success:before {
+            border-color: #66CC66 #66CC66 #66CC66 transparent;
+        }
+
+        button.btn-success:after {
+            border-color: #66CC66 transparent #66CC66 #66CC66;
+        }
+
+        button.btn-info:before {
+            border-color: #66CCCC #66CCCC #66CCCC transparent;
+        }
+
+        button.btn-info:after {
+            border-color: #66CCCC transparent #66CCCC #66CCCC;
+        }
+
+        button.btn-warning:before {
+            border-color: #CC9966 #CC9966 #CC9966 transparent;
+        }
+
+        button.btn-warning:after {
+            border-color: #CC9966 transparent #CC9966 #CC9966;
+        }
+
+        button.btn-danger:before {
+            border-color: #CC3333 #CC3333 #CC3333 transparent;
+        }
+
+        button.btn-danger:after {
+            border-color: #CC3333 transparent #CC3333 #CC3333;
+        }
+    </style>
+
+    <title>
+
+    </title>
+
+</head>
+
+ <body>
+ <div class="head">
+<div class="row">
+    <div class="col-md-6" id="solid" style="font-size:40px; margin-left:0%">
+        <div class="left">
+        <img  style="float:left" src="NITKKR_logo.jpg" height="100px" width="100px">
+        </div> 
+        N. I. T. Kurukshetra
+    </div>
+    <div class="col-md-6" style="margin-left:80%;">
+            <ul style="display:inline;margin-left:-90px">
+                    <li>          <a href="index.htm" ><span class="special">home</span> </a></li>
+        
+       <li>                        <a href="about.htm"> about </a></li>
+           <li>                    <a href="contact.htm">contact </a></li>
+           <li>                    
+               <li>          <a href="departments.html">departments</a></li>
+       
+                       <li>                    <a href="developers.html">Team </a></li>
+                       
+               </ul>
+    </div>
+</div>
+
+
+</div>
+
+
+
+    
+    <div id="header1" class="ribbon" style="margin-top:10px;">
+        <h1 id="text"><a>Computer Department</a></h1>
+    </div>
+    <div class="row">
+        <div class=col-md-6>
+            <h2 style="margin-left:10%">Our Specialisations</h2>
+        </div>
+        <div class=col-md-6>
+            <h2 style="margin-left:25%" >Our Faculty</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div id="content1" style="margin-left:10">
+            <div class="col-md-7">
+                    <p id="ds" style="display:block">
+
+                        </p>
+                <button type="button" onmouseover="fxn()" class="btn btn-info ribbon">Data structure</button>
+                <p id="ds" style="display:block">
+
+                </p>
+        
+            
+                <button type="button" onclick="fc1()" class="btn btn-danger ribbon">c++</button>
+            <p id="as"></p>    
+               
+                <button type="button" onclick="fc2()" class="btn btn-success ribbon">Web desiging</button>
+            
+                
+                <button type="button" onclick="fc3()" class="btn btn-info ribbon">DA</button>
+                <button type="button" onclick="fc4()" class="btn btn-success ribbon">Operating System</button>
+                <button type="button" onclick="fc5()" class="btn btn-danger ribbon">Embedded System</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div id="team"  style="margin-left:-100%;"class="pb-5" class="col-md-4">
+
+                <!-- Team member -->
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="comphod.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Dr. Mayank Dave</h4>
+                                    <p class="card-text">Head Of Depatment <br> Professor</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Dr. Mayank Dave</h4>
+                                    <p class="card-text"><b>Area Of Intrest </b>:<br>
+
+                                            Latest Topic of Interest: System and Network Security<br>
+                                            
+                                            Other Areas of Interest: Cyber Security, Cloud Security, Key Management, Wireless Sensor Networks, Underwater Sensor Networks, Semantic Web, Mobile Computing
+                                            
+                                             </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        <!-- </div>
+    
+                    <div class="col-md-2"> -->
+
+ 
+                    <div id="team"  style="margin-left:-100%;"class="pb-5" class="col-md-4">
+
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid"
+                                                    src="comp1.jpg"
+                                                    alt="card image"></p>
+                                            <h4 class="card-title">Dr. J. K.Chabbra</h4>
+                                            <p class="card-text">Professor</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Dr.J. K. Chabbra</h4>
+                                            <p class="card-text">Teaching Interests: Programming in C, Object oriented programming in C++, Data Structures, Software Design & Development, Software Engineering & Project Development, Operating Systems Data Bases, Object Oriented Systems, Software Testing.
+
+                                                    Research Interests: Software Engineering, Machine Learning,</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-skype"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    
+
+                <!-- ./Team member -->
+                <!-- Team member -->
+            
+    
+    <section style="background-color:rgba(0,0,0,0.8);margin-bottom:20px;">
+
+        <h1  style="margin-left:40% ;color:white"> Our Other Faculty</h1>
+    </section> 
+<div class="Container">
+<div class="row">
+    <div class="col-md-4">
+
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="comp2.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Dr. Virender Ranga</h4>
+                                    <p class="card-text">Assistant Professor</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Dr. Virender Ranga</h4>
+                                    <p class="card-text">
+                                        
+                                            Area of Interest:	
+                                            Wireless Adhoc & Sensor Networks | Evolutionary Computations | Machine Learning Techniques in Networking | Flying Adhoc Sensor Networks (FANeTs) | Security issues in Cloud Computing & Internet of Things (IoTs) | Soft Computing techniques for IoT Anaytics | Security Issues in Software Defined Networking | Energy Harvesting in Internet of Things.
+                                            
+                                             </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+    <div class="col-md-4">
+        
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="comp3.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Miss Mamtesh</h4>
+                                    <p class="card-text">Assistant Professor</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Miss Mamtesh</h4>
+                                    <p class="card-text">Qualification : M. Tech
+                                            Current Address : 
+                                            Phone 1 (office) : 8053425982
+                                            Phone 2 (office) : 
+                                            Email : mamteshnadiyan49@gmail.com.
+                                        area of interest: Software engg.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+            
+        </div>
+        </div><div class="col-md-4">
+        
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="comp4.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Mr. vishal Passricha</h4>
+                                        <p class="card-text">Assistant Professor</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Mr. Vishal Passricha</h4>
+                                        <p class="card-text">Qualification : PhD Pursuing (NIT, Kurukshetra)
+                                                Current Address : 
+                                                Phone 1 (office) : 9354761220
+                                                Phone 2 (office) : 
+                                                Email : vishal_pasricha@yahoo.com</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+            </div>
+</div>
+ </div>
+
+
+ 
+ <section id="link">
+            
+        <div class="container">
+<div class="text">
+                <b>about</b>
+                <hr>
+                <br>
+                 NIT kkr enjoys the reputation of being a centre of <br>excellence in research and training<br> the status of being an Institution <br>of National Importance.</div>
+           <div class="text">
+          <b>social link</b>      
+                <hr>
+                <br>
+            
+                <a href="#"><i class="fa fa-amazon" style="font-size:30px" ></i></a>
+
+<a href="#"><i class="fa fa-google  " style="font-size:30px"></i></a>
+<a href="#"><i class="fa fa-facebook-square  " style="font-size:30px"></i></a>
+
+<a href="#" title="firefox"><i class="fa fa-firefox  " style="font-size:30px"></i></a>
+<a title="instagram" href="#"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+</div>
+         <div class="text">
+<b>adress</b>
+<hr>
+<br>
+
+N.I.T. Kurukshetra<br>
+kirmich road<br>
+thnesar,Kurukshetra<br>
+haryana<br></div>
+        </div>
+</section>
+
+</section>
+
+<footer>
+<div class="container">      <p>
+                <b>© Copyrights Solid. All Rights Reserved
+                                <br>
+                                               It Created by the students of I.T.-2 ,3 students  </a>     </b>   
+                                </p></div>
+</footer>
+<!-- 
+<section id="link">
+            
+        <div class="container">
+<div class="text">
+                <b>about</b>
+                <hr>
+                <br>
+        Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry. Lorem Ipsum has been<br> the industry's standard dummy <br>text ever since the 1500s.</b>
+        </div>
+           <div class="text">
+          <b>social link</b>      
+                <hr>
+                <br>
+            
+                <a href="#"><i class="fa fa-amazon" style="font-size:30px" ></i></a>
+
+<a href="#"><i class="fa fa-google  " style="font-size:30px"></i></a>
+<a href="#"><i class="fa fa-facebook-square  " style="font-size:30px"></i></a>
+
+<a href="#" title="firefox"><i class="fa fa-firefox  " style="font-size:30px"></i></a>
+<a title="instagram" href="#"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+</div>
+         <div class="text">
+<b>adress</b>
+<hr>
+<br>
+Some Ave, 987,<br>
+23890, New York, <br>
+United States. <br>
+</div>
+        </div>
+</section>
+
+</section>
+
+<footer>
+<div class="container">      <p>
+                <b>© Copyrights Solid. All Rights Reserved
+                                <br>
+                                                Created with Solid template by <a href="https://templatemag.com" >template </a>     </b>   
+                                </p></div>
+</footer> --> -->
+     
+</body>
+
+</html>

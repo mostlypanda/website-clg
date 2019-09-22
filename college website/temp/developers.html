@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="flexboxgrid.css">
+  <link rel="stylesheet"  href="style.css">
+
+<!-- Compiled and minified CSS -->
+
+<!-- Compiled and minified JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="main.js">
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+  <script src="https://code.jque    background-color: rgba(0, 0, 0, 0.4);
+  ry.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <style>
+    h1{
+      font-style: italic;
+      text-align:centre;
+      text-decoration: black;
+      font-size: 50px;
+
+
+    }
+  img {
+    border-radius: 50%;
+  }
+    .column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+
+
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* Zoom In #2 */
+.hover02 figure img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover02 figure:hover img {
+	width: 350px;
+}
+
+/* Zoom Out #1 */
+.hover03 figure img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover03 figure:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* Zoom Out #2 */
+.hover04 figure img {
+	width: 400px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover04 figure:hover img {
+	width: 300px;
+}
+
+/* Slide */
+.hover05 figure img {
+	margin-left: 30px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover05 figure:hover img {
+	margin-left: 0;
+}
+
+/* Rotate */
+.hover06 figure img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover06 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+/* Blur */
+.hover07 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover07 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* Gray Scale */
+.hover08 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover08 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* Sepia */
+.hover09 figure img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover09 figure:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+/* Blur + Gray Scale */
+.hover10 figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+/* Opacity #1 */
+.hover11 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover11 figure:hover img {
+	opacity: .5;
+}
+
+/* Opacity #2 */
+.hover12 figure {
+	background: #1abc9c;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+}
+
+/* Flashing */
+.hover13 figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+.head
+{
+background-color:rgb(5, 6, 7,0.9);
+color:white;
+height:130px;
+border-bottom:rgba(0,0,0,0.8);
+
+}
+.head a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:12px;
+}
+h
+.head li
+{
+    
+    display: inline;
+
+}
+.head #solid h1
+{
+    margin-left:160px;
+    margin-top:20px;
+   
+}
+.head .special
+{
+    color:red;
+    font-weight:bold;
+}
+a:hover{
+    color:skyblue;
+    font-weight:bold;
+
+}
+.head li
+{
+    
+    display: inline;
+ padding-left:10px 20px 0px 20px ;
+ margin:3px;
+}
+
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Shine */
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Circle */
+.hover15 figure {
+	position: relative;
+}
+.hover15 figure::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.hover15 figure:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+    </style>
+
+
+<div class="head">
+	<div class="row">
+		<div class="col-md-6" id="solid" style="font-size:40px; margin-left:0%">
+			<div class="left">
+			<img  style="float:left" src="NITKKR_logo.jpg" height="100px" width="100px">
+			</div> 
+			N. I. T. Kurukshetra
+		</div>
+		<div class="col-md-4" style="margin-left:80%;">
+				<ul style="display:inline;margin-left:-90px">
+						<li>          <a href="index.htm" ><span class="special">home</span> </a></li>
+			
+		   <li>                        <a href="about.htm"> about </a></li>
+			   <li>                    <a href="contact.htm">contact </a></li>
+			   <li>                    
+				   <li>             <li>          <a href="departments.html">departments</a>
+				   </li>     
+						   <li>                    <a href="developers.html">Team </a></li>
+						   
+				   </ul>
+		</div>
+	</div>
+	
+	
+	</div>
+	
+	
+                <section id="container">
+                    
+				  <h1 style="margin-left:38%">   MEET THE DEVS <br> </h1>
+				  <h1 style="margin-left:33%">TEAM TECHNOPANDA</h1>
+                  
+<br>
+<br>
+
+
+
+<div class="hover09 column" style="margin-left:22%">
+  <div>
+    <figure><img src="nipun.jpg"  height="200px" width="200px" /></figure>
+    <span></span>
+  </div>
+  <div>
+    <figure><img src="sarthak.jpg"  height="200px" width="200px" /></figure>
+    <span></span>
+  </div>
+  <div>
+    <figure><img src="sparshas.jpg"  height="200px" width="200px" /></figure>
+    <span></span>
+  </div>
+</div>
+<br>
+<div class="row">
+<h3 style="margin-left:24%">Nipun Singla</h3>
+<h3 style="margin-left:12%">Sarthak Mittal</h3>
+<h3 style="margin-left:12%">Sparsh Garg</h3>
+</div>
+
+
+
+                </section>
+
+
+                <section id="link">
+            
+                    <div class="container">
+            <div class="text">
+                            <b>about</b>
+                            <hr>
+                            <br>
+                             NIT kkr enjoys the reputation of being a centre of <br>excellence in research and training<br> the status of being an Institution <br>of National Importance.</div>
+                       <div class="text">
+                      <b>social link</b>      
+                            <hr>
+                            <br>
+                        
+                            <a href="#"><i class="fa fa-amazon" style="font-size:30px" ></i></a>
+            
+            <a href="#"><i class="fa fa-google  " style="font-size:30px"></i></a>
+            <a href="#"><i class="fa fa-facebook-square  " style="font-size:30px"></i></a>
+            
+            <a href="#" title="firefox"><i class="fa fa-firefox  " style="font-size:30px"></i></a>
+            <a title="instagram" href="#"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+            </div>
+                     <div class="text">
+            <b>adress</b>
+            <hr>
+            <br>
+        
+        N.I.T. Kurukshetra<br>
+        kirmich road<br>
+        thnesar,Kurukshetra<br>
+        haryana<br></div>
+                    </div>
+            </section>
+            
+            </section>
+            
+            <footer>
+            <div class="container">      <p>
+                            <b>© Copyrights Solid. All Rights Reserved
+                                            <br>
+                                                           It Created by the students of I.T.-2 ,3 students  </a>     </b>   
+                                            </p></div>
+            </footer>
+                 
+          
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="flexboxgrid.css">
+  <link rel="stylesheet"  href="style.css">
+
+<!-- Compiled and minified CSS -->
+
+<!-- Compiled and minified JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="main.js" >
+   </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+  <script src="https://code.jque    background-color: rgba(0, 0, 0, 0.4);
+  ry.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+<style>
+      
+      .head
+{
+background-color:rgb(5, 6, 7,0.9);
+color:white;
+height:130px;
+border-bottom:rgba(0,0,0,0.8);
+
+}
+.head a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:12px;
+}
+h
+.head li
+{
+    
+    display: inline;
+
+}
+.head #solid h1
+{
+    margin-left:160px;
+    margin-top:20px;
+   
+}
+.head .special
+{
+    color:red;
+    font-weight:bold;
+}
+a:hover{
+    color:skyblue;
+    font-weight:bold;
+
+}
+.head li
+{
+    
+    display: inline;
+ padding-left:10px 20px 0px 20px ;
+ margin:3px;
+}
+
+
+    body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.tilter {
+	position: relative;
+	display: block;
+	flex: none;
+	width: 300px;
+	height: 415px;
+	margin: 1.5em 2.5em;
+	color: #fff;
+	perspective: 1000px;
+}
+
+.tilter * {
+	pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+	color: #fff;
+	outline: none;
+}
+
+.tilter__figure,
+.tilter__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.tilter__figure > * {
+	transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.tilter__figure {
+	position: relative;
+}
+
+.tilter__figure::before {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+
+.tilter__deco--shine div {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.tilter__caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 4em;
+}
+
+.tilter__title {
+	font-family: 'Abril Fatface', serif;
+	font-size: 2.5em;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+}
+
+.tilter__description {
+	font-size: 0.85em;
+	margin: 1em 0 0 0;
+	letter-spacing: 0.15em;
+}
+    
+    </style>
+
+      <title>
+
+        </title>
+      
+    </head>
+    <body>
+
+
+        <div class="head">
+            <div class="row">
+                <div class="col-md-6" id="solid" style="font-size:40px; margin-left:0%">
+                    <div class="left">
+                    <img  style="float:left" src="NITKKR_logo.jpg" height="100px" width="100px">
+                    </div> 
+                N. I. T. Kurukshetra
+                </div>
+                <div class="col-md-4" style="margin-left:80%;">
+                        <ul style="display:inline;margin-left:-90px">
+                                <li>          <a href="index.htm" ><span class="special">home</span> </a></li>
+                    
+                   <li>                        <a href="about.htm"> about </a></li>
+                       <li>                    <a href="contact.htm">contact </a></li>
+                       <li>                    
+                           <li>             <li>          <a href="departments.html">departments</a>
+                           </li>     
+                                   <li>                    <a href="developers.html">Team </a></li>
+                                   
+                           </ul>
+                </div>
+            </div>
+            
+            
+            </div>
+            
+            
+
+                    <section id="container">
+                        <div style="float:inline" class="row">
+
+                            <a href="comp.htm" class="tilter tilter--2">
+                                    <figure class="tilter__figure">
+                                        <img class="tilter__image" src="com-1.jpg" alt="img03" />
+                                        <div class="tilter__deco tilter__deco--shine"><div></div></div>
+                                        <div class="tilter__deco tilter__deco--overlay"></div>
+                                        <figcaption class="tilter__caption">
+                                            <h3 class="tilter__title">Computer department</h3>
+                                            <p class="tilter__description">NITKKR</p>
+                                        </figcaption>
+                                        <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                            <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                        </svg>
+                                    </figure>
+                                </a>
+
+
+                                <a href="elec.html" class="tilter tilter--2">
+                                        <figure class="tilter__figure">
+                                            <img class="tilter__image" src="elect.jpg" alt="img03" />
+                                            <div class="tilter__deco tilter__deco--shine"><div></div></div>
+                                            <div class="tilter__deco tilter__deco--overlay"></div>
+                                            <figcaption class="tilter__caption">
+                                                <h3 class="tilter__title">Electronics department</h3>
+                                                <p class="tilter__description">NITKKR</p>
+                                            </figcaption>
+                                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+
+                                    <a href="mech.html" class="tilter tilter--2">
+                                            <figure class="tilter__figure">
+                                                <img class="tilter__image" src="mecha.jpg" alt="img03" />
+                                                <div class="tilter__deco tilter__deco--shine"><div></div></div>
+                                                <div class="tilter__deco tilter__deco--overlay"></div>
+                                                <figcaption class="tilter__caption">
+                                                    <h3 class="tilter__title">Mechanical department</h3>
+                                                    <p class="tilter__description">NITKKR</p>
+                                                </figcaption>
+                                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                                </svg>
+                                            </figure>
+                                        </a>
+
+                                        <a href="civil.html" class="tilter tilter--2">
+                                                <figure class="tilter__figure">
+                                                    <img class="tilter__image" src="Civil+Engineering.jpg" alt="img03" />
+                                                    <div class="tilter__deco tilter__deco--shine"><div></div></div>
+                                                    <div class="tilter__deco tilter__deco--overlay"></div>
+                                                    <figcaption class="tilter__caption">
+                                                        <h3 class="tilter__title">Civil department</h3>
+                                                        <p class="tilter__description">NITKKR</p>
+                                                    </figcaption>
+                                                    <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                                        <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                                    </svg>
+                                                </figure>
+                                            </a>
+
+                                            </div>
+                    </section>
+
+                    
+    <section id="link">
+            
+            <div class="container">
+    <div class="text">
+                    <b>about</b>
+                    <hr>
+                    <br>
+                     NIT kkr enjoys the reputation of being a centre of <br>excellence in research and training<br> the status of being an Institution <br>of National Importance.</div>
+               <div class="text">
+              <b>social link</b>      
+                    <hr>
+                    <br>
+                
+                    <a href="#"title="amazon"><i class="fa fa-amazon" style="font-size:30px" ></i></a>
+    
+    <a href="#" title="google"><i class="fa fa-google  " style="font-size:30px"></i></a>
+    <a href="#" title="facebook"><i class="fa fa-facebook-square  " style="font-size:30px"></i></a>
+    
+    <a href="#" title="firefox"><i class="fa fa-firefox  " style="font-size:30px"></i></a>
+    <a title="instagram" href="#"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+    </div>
+             <div class="text">
+    <b>adress</b>
+    <hr>
+    <br>
+
+N.I.T. Kurukshetra<br>
+kirmich road<br>
+thnesar,Kurukshetra<br>
+haryana<br></div>
+            </div>
+    </section>
+    
+    </section>
+    
+    <footer>
+    <div class="container">      <p>
+                    <b>© Copyrights Solid. All Rights Reserved
+                                    <br>
+                                                   It Created by the students of I.T.-2 ,3 students  </a>     </b>   
+                                    </p></div>
+    </footer>
+         
+    </body>
+</html>
